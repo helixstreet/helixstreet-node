@@ -295,7 +295,7 @@ construct_runtime!(
 		TransactionPayment: pallet_transaction_payment,
 		Sudo: pallet_sudo,
 		// Include the custom logic from the pallet-template in the runtime.
-		genomics: pallet_genomics,
+		Genomics: pallet_genomics,
 	}
 );
 
@@ -474,7 +474,7 @@ impl_runtime_apis! {
 			list_benchmark!(list, extra, frame_system, SystemBench::<Runtime>);
 			list_benchmark!(list, extra, pallet_balances, Balances);
 			list_benchmark!(list, extra, pallet_timestamp, Timestamp);
-			list_benchmark!(list, extra, pallet_template, genomics);
+			list_benchmark!(list, extra, pallet_template, Genomics);
 
 			let storage_info = AllPalletsWithSystem::storage_info();
 
