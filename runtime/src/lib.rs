@@ -40,7 +40,7 @@ use pallet_transaction_payment::CurrencyAdapter;
 pub use sp_runtime::BuildStorage;
 pub use sp_runtime::{Perbill, Permill};
 
-/// Import the template pallet.
+/// Import the genomics pallet.
 pub use pallet_genomics;
 
 /// An index to a block.
