@@ -36,7 +36,7 @@ pub mod pallet {
 	#[pallet::getter(fn something)]
 	// Learn more about declaring storage items:
 	// https://docs.substrate.io/v3/runtime/storage#declaring-storage-items
-	pub type Something<T> = StorageValue<_, u32>;
+	pub type GenomicHash<T> = StorageValue<_, u32>;
 
 	// Pallets use events to inform users when important changes are made.
 	// https://docs.substrate.io/v3/runtime/events-and-errors
@@ -65,17 +65,17 @@ pub mod pallet {
 		/// An example dispatchable that takes a singles value as a parameter, writes the value to
 		/// storage and emits an event. This function must be dispatched by a signed extrinsic.
 		#[pallet::weight(10_000 + T::DbWeight::get().writes(1))]
-		pub fn do_something(origin: OriginFor<T>, something: u32) -> DispatchResult {
+		pub fn store_genomicdata(origin: OriginFor<T>, genomichash: u32) -> DispatchResult {
 			// Check that the extrinsic was signed and get the signer.
 			// This function will return an error if the extrinsic is not signed.
 			// https://docs.substrate.io/v3/runtime/origins
 			let who = ensure_signed(origin)?;
 
 			// Update storage.
-			<Something<T>>::put(something);
+			<GenomicHash<T>>::put(genomichash);
 
 			// Emit an event.
-			Self::deposit_event(Event::SomethingStored(something, who));
+			Self::deposit_event(Event::SomethingStored(genomichash, who));
 			// Return a successful DispatchResultWithPostInfo
 			Ok(())
 		}
@@ -86,14 +86,14 @@ pub mod pallet {
 			let _who = ensure_signed(origin)?;
 
 			// Read a value from storage.
-			match <Something<T>>::get() {
+			match <GenomicHash<T>>::get() {
 				// Return an error if the value has not been set.
 				None => Err(Error::<T>::NoneValue)?,
 				Some(old) => {
 					// Increment the value read from storage; will error in the event of overflow.
 					let new = old.checked_add(1).ok_or(Error::<T>::StorageOverflow)?;
 					// Update the value in storage with the incremented result.
-					<Something<T>>::put(new);
+					<GenomicHash<T>>::put(new);
 					Ok(())
 				},
 			}
