@@ -1,6 +1,6 @@
 [package]
 name = "helixstreet-node"
-description = "A parachain node helixstreet built with Substrate and Cumulus, part of Polkadot Sdk. (polkadot v1.15.0)"
+description = "helixstreet parachain node built with Substrate and Cumulus, part of Polkadot Sdk. (polkadot v1.15.0)"
 version = "0.1.0"
 license = "Unlicense"
 authors.workspace = true
