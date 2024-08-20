@@ -22,7 +22,7 @@ jsonrpsee = { features = ["server"], workspace = true }
 futures = { workspace = true }
 serde_json = { workspace = true, default-features = true }
 docify = { workspace = true }
-parachain-template-runtime.workspace = true
+helixstreet-runtime.workspace = true
 frame-benchmarking.workspace = true
 frame-benchmarking.default-features = true
 frame-benchmarking-cli.workspace = true
@@ -114,7 +114,7 @@ substrate-build-script-utils.default-features = true
 [features]
 default = ["std"]
 std = [
-	"parachain-template-runtime/std",
+	"helixstreet-runtime/std",
 	"log/std",
 	"xcm/std"
 ]
@@ -122,14 +122,14 @@ runtime-benchmarks = [
 	"cumulus-primitives-core/runtime-benchmarks",
 	"frame-benchmarking-cli/runtime-benchmarks",
 	"frame-benchmarking/runtime-benchmarks",
-	"parachain-template-runtime/runtime-benchmarks",
+	"helixstreet-runtime/runtime-benchmarks",
 	"polkadot-cli/runtime-benchmarks",
 	"polkadot-primitives/runtime-benchmarks",
 	"sc-service/runtime-benchmarks",
 	"sp-runtime/runtime-benchmarks",
 ]
 try-runtime = [
-	"parachain-template-runtime/try-runtime",
+	"helixstreet-runtime/try-runtime",
 	"polkadot-cli/try-runtime",
 	"sp-runtime/try-runtime",
 ]

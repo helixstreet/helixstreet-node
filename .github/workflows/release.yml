@@ -62,4 +62,4 @@ jobs:
         with:
           files: |
             target/release/parachain-template-node
-            target/release/wbuild/parachain-template-runtime/parachain_template_runtime.compact.compressed.wasm
+            target/release/wbuild/helixstreet-runtime/helixstreet_runtime.compact.compressed.wasm
