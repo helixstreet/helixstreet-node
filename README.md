@@ -1,6 +1,6 @@
 # helixstreet Collator Node
 
-This repository is a starting point for starting a helixstreet collator node and develop additional pallets for the helixstreet life sciences web3 ecosystem
+This repository is a starting point for starting a helixstreet collator node and develop additional pallets for the helixstreet life sciences web3 ecosystem. The repository is based on the parachain template.
 
 ☁️ It is based on the Cumulus framework.
 🔧 Its runtime is configured with custom pallets and includes ready-made pallets such as a Balances pallet.
