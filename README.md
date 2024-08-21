@@ -5,7 +5,7 @@ This repository is a starting point for starting a helixstreet collator node and
 ☁️ It is based on the Cumulus framework.
 🔧 Its runtime is configured with custom pallets and includes ready-made pallets such as a Balances pallet.
 🧟 It uses Zombienet for local development chain setup.
-#How to deploy
+How to deploy
 Rust Installation:
 
 🦀 Make sure you have Rust installed. If not, follow the Rust installation instructions.
@@ -21,7 +21,7 @@ Set up Zombienet:
 🧟 Install Zombienet:
 
 Bash
-# Using npm
+Using npm
 npm install -g @zombienet/cli
 Use code with caution.
 
