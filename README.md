@@ -21,9 +21,10 @@ Set up Zombienet:
 
 🧟 Install Zombienet:
 
-Bash
-Using npm
-```npm install -g @zombienet/cli
+
+```Bash
+#Using npm 
+npm install -g @zombienet/cli
 ```
 
 👥 Download Polkadot binaries:
