@@ -13,8 +13,9 @@ Build the Node:
 
 🔨 Build the helixstreet node:
 
-Bash
+```Bash
 cargo build --package helixstreet-node --release
+```
 
 Set up Zombienet:
 
@@ -23,7 +24,7 @@ Set up Zombienet:
 Bash
 Using npm
 ```npm install -g @zombienet/cli
-Use code with caution.
+```
 
 👥 Download Polkadot binaries:
 
@@ -34,6 +35,7 @@ Start the Local Development Chain and Validator:
 
 🚀 Start the chain and collator using the helixstreet-zombienet.toml configuration:
 
-Bash
+```Bash
 # Using npm version of zombienet
 npx --yes @zombienet/cli --provider native spawn ./helixstreet-zombienet.toml 
+```
