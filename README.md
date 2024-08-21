@@ -11,7 +11,7 @@ Rust Installation:
 🦀 Make sure you have Rust installed. If not, follow the Rust installation instructions.
 Build the Node:
 
-🔨 Build the HelixStreet node:
+🔨 Build the helixstreet node:
 
 Bash
 cargo build --package helixstreet-node --release
@@ -22,7 +22,7 @@ Set up Zombienet:
 
 Bash
 Using npm
-npm install -g @zombienet/cli
+```npm install -g @zombienet/cli
 Use code with caution.
 
 👥 Download Polkadot binaries:
