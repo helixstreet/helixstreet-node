@@ -1,11 +1,11 @@
-helixstreet Collator Node
+# helixstreet Collator Node
 
 This repository is a starting point for starting a helixstreet collator node and develop additional pallets for the helixstreet life sciences web3 ecosystem
 
 ☁️ It is based on the Cumulus framework.
 🔧 Its runtime is configured with custom pallets and includes ready-made pallets such as a Balances pallet.
 🧟 It uses Zombienet for local development chain setup.
-How to deploy
+#How to deploy
 Rust Installation:
 
 🦀 Make sure you have Rust installed. If not, follow the Rust installation instructions.
