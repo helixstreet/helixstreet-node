@@ -37,6 +37,6 @@ Start the Local Development Chain and Validator:
 🚀 Start the chain and collator using the helixstreet-zombienet.toml configuration:
 
 ```Bash
-./zombienet --provider native spawn helixstreet-zombienet.toml
+zombienet --provider native spawn helixstreet-zombienet.toml
 ```
 
