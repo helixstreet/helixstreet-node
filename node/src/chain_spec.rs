@@ -219,10 +219,7 @@ pub fn production_config() -> ChainSpec {
         // Increased number of initial authorities (replace with actual keys)
         vec![
             (
-                get_account_id_from_seed::<sr25519::Public>("Alice"),
-                get_collator_keys_from_seed("Alice"),
-_from_seed::<sr25519::Public>("Bob"),
-                get_collator_keys_from_seed("Bob"),
+             
             ),
             // Add more authorities here...
         ],
