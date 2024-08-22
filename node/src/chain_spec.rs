@@ -201,3 +201,33 @@ fn testnet_genesis(
 		"sudo": { "key": Some(root) }
 	})
 }
+
+
+pub fn production_config() -> ChainSpec {
+    // ... (other configurations)
+
+    ChainSpec::builder(
+        // ... 
+    )
+    .with_name("helixstreet Mainnet")
+    .with_id("helixstreet_mainnet")
+    .with_chain_type(ChainType::Live)
+    .with_genesis_config_patch(production_genesis(
+        // Increased number of initial authorities
+        vec![
+            // ... (more authorities)
+        ],
+        // ... (other configurations)
+    ))
+    // ... 
+    .build()
+}
+
+fn production_genesis(
+    // ...
+) -> serde_json::Value {
+    serde_json::json!({
+        // ... (other configurations)
+        "sudo": { "key": None }, // Disable sudo after initial setup
+    })
+}
