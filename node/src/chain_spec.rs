@@ -202,20 +202,29 @@ fn testnet_genesis(
 	})
 }
 
-
 pub fn production_config() -> ChainSpec {
     // ... (other configurations)
 
     ChainSpec::builder(
-        // ... 
+        runtime::WASM_BINARY.expect("WASM binary was not built, please build it!"),
+        Extensions {
+            relay_chain: "polkadot".into(), // Assuming production relay chain
+            para_id: 2000, // Replace with your actual para ID
+        },
     )
     .with_name("helixstreet Mainnet")
     .with_id("helixstreet_mainnet")
     .with_chain_type(ChainType::Live)
     .with_genesis_config_patch(production_genesis(
-        // Increased number of initial authorities
+        // Increased number of initial authorities (replace with actual keys)
         vec![
-            // ... (more authorities)
+            (
+                get_account_id_from_seed::<sr25519::Public>("Alice"),
+                get_collator_keys_from_seed("Alice"),
+_from_seed::<sr25519::Public>("Bob"),
+                get_collator_keys_from_seed("Bob"),
+            ),
+            // Add more authorities here...
         ],
         // ... (other configurations)
     ))
@@ -224,10 +233,18 @@ pub fn production_config() -> ChainSpec {
 }
 
 fn production_genesis(
-    // ...
+    invulnerables: Vec<(AccountId, AuraId)>,
+    endowed_accounts: Vec<AccountId>,
+    // Remove root key for production
+    // root: AccountId, 
+    id: ParaId,
 ) -> serde_json::Value {
     serde_json::json!({
         // ... (other configurations)
-        "sudo": { "key": None }, // Disable sudo after initial setup
+        "sudo": { "key": None }, // Disable sudo
+        // Add any pallet-specific extensions here if needed
+        // "myCustomPallet": {
+        //     "someValue": helixstreet_dummy_entry, 
+        // },
     })
 }
