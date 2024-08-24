@@ -11,7 +11,7 @@ publish = false
 build = "build.rs"
 
 # [[bin]]
-# name = "parachain-template-node"
+# name = "helixstreet-node"
 
 [dependencies]
 clap = { features = ["derive"], workspace = true }

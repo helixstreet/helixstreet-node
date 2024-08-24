@@ -50,7 +50,7 @@ jobs:
       # Check the `test-zombienet` workflow for a parachain smoke test.
       - name: Check that the node starts up
         run: |
-          ./target/debug/parachain-template-node --help
+          ./target/debug/helixstreet-node --help
 
   build-docker:
     runs-on: ubuntu-latest

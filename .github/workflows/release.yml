@@ -61,5 +61,5 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            target/release/parachain-template-node
+            target/release/helixstreet-node
             target/release/wbuild/helixstreet-runtime/helixstreet_runtime.compact.compressed.wasm
