@@ -2,7 +2,7 @@
 license = "MIT-0"
 authors = ["Parity Technologies <admin@parity.io>"]
 homepage = "https://paritytech.github.io/polkadot-sdk/"
-repository = "https://github.com/paritytech/polkadot-sdk-parachain-template.git"
+repository = "https://github.com/helixstreet/helixstreet-node.git"
 edition = "2021"
 
 [workspace]
