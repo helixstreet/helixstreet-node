@@ -209,7 +209,7 @@ pub fn production_config() -> ChainSpec {
         runtime::WASM_BINARY.expect("WASM binary was not built, please build it!"),
         Extensions {
             relay_chain: "polkadot".into(), // Assuming production relay chain
-            para_id: 2000, // Replace with your actual para ID
+            para_id: 3395, // Replace with your actual para ID
         },
     )
     .with_name("helixstreet Mainnet")
