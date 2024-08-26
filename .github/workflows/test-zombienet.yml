@@ -24,7 +24,7 @@ jobs:
       - uses: ./.github/actions/ubuntu-dependencies
 
       - name: Build the node individually in release mode
-        run: cargo build --helixstreet-node --release
+        run: cargo build --package helixstreet-node --release
         timeout-minutes: 90
 
       - name: Download relaychain binaries
