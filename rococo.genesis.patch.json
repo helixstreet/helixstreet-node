@@ -2,12 +2,12 @@
     "balances": {
       "balances": [
         [
-          "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY",
-          1152921504606846976
+          "5DtGX4jKExsXK2d85YNbXSzfoUKgQPc56d3ekgbKtu5LEJxy",
+          1000000000000000000
         ],
         [
-          "5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty",
-          1152921504606846976
+          "5E9ZHVfjabi2Z4oYPdQw4o1rBACgAniKtkU3kbQvUuvzBoVK",
+          2000000000000000000
         ]
       ]
     },
@@ -43,6 +43,6 @@
       "safeXcmVersion": 4
     },
     "sudo": {
-      "key": "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY"
+      "key": "5DtGX4jKExsXK2d85YNbXSzfoUKgQPc56d3ekgbKtu5LEJxy"
     }
   }

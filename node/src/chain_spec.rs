@@ -170,7 +170,7 @@ fn testnet_genesis(
 	invulnerables: Vec<(AccountId, AuraId)>,
 	endowed_accounts: Vec<AccountId>,
 	root: AccountId,
-	id: ParaId,
+	id: xcm,
 ) -> serde_json::Value {
 	serde_json::json!({
 		"balances": {
